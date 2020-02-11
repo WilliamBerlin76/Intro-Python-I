@@ -30,15 +30,10 @@ print(y)
 # Use a list comprehension to create a list containing only the _even_ elements
 # the user entered into list x.
 
-x = '1,2,3,4,5,6,7,8,9,10'.split(',')
+x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
-for i in range(len(x)):
-    ind = i
-    j = x[i]
-    x.insert(ind, int(x[i]))
-    x.pop(i+1)
 
-y = [i for i in x if i%2 == 0]
+y = [int(i) for i in x if int(i)%2 == 0]
 
 print(y)
