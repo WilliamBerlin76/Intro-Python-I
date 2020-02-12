@@ -24,7 +24,7 @@ print(open_file())
 # YOUR CODE HERE
 def open_bar():
     nf = open("bar.txt", "w")
-    written = nf.write("one line \n two line \n three line")
+    nf.write("one line \n two line \n three line")
     nf.close()
 
 open_bar()
