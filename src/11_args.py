@@ -27,10 +27,10 @@ a = [7, 6, 5, 4]
 
 # How do you have to modify the f2 call below to make this work?
 
-def f2(arr):
-    return sum(arr)
+# def f2(arr):
+#     return sum(arr)
 
-print(f2(a))    # Should print 22
+print(f2(*a))    # Should print 22
 
 # Write a function f3 that accepts either one or two arguments. If one argument,
 # it returns that value plus 1. If two arguments, it returns the sum of the
@@ -77,8 +77,8 @@ d = {
 }
 
 # How do you have to modify the f4 call below to make this work?
-def f4(dtn):
-    for key, value in dtn.items():
-        print('key: %s, value: %s' %(key, value))
+# def f4(dtn):
+#     for key, value in dtn.items():
+#         print('key: %s, value: %s' %(key, value))
 
-f4(d)
+f4(**d)
